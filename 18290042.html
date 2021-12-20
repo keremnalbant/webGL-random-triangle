@@ -1,0 +1,28 @@
+<html>
+
+<body>
+  <canvas id="glcanvas" width="512" height="512"></canvas>
+</body>
+
+<script id="vertex-shader" type="x-shader/x-vertex">
+  attribute vec4 vPosition;
+  void main(){
+     gl_Position = vPosition;
+  }
+</script>
+
+<script id="fragment-shader" type="x-shader/x-fragment">
+precision mediump float; 
+uniform vec3 fColor;
+void main(){
+gl_FragColor = vec4(fColor, 1.0);
+}
+</script>
+
+<script src="MV.js"></script>
+
+<script src="initShaders.js"></script>
+
+<script src="18290042.js"></script>
+
+</html>
